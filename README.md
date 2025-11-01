@@ -16,7 +16,7 @@ The dashboard provided decision-ready insights for stock planning, customer rete
 
 ## 📷 Dashboard Previews
 
-![Dashboard Page 1](Images/Page1.jpg)  
+[![Dashboard Page 1](Images/Page1.jpg)](https://1drv.ms/x/c/d9e77d126b4add1c/EfdRYeP181VMpT_AQMf37zwBaFu6KLnLrGwzwLsnvbwZ5Q?e=ab44YT)
 ![Dashboard Page 2](Images/Page2.jpg)
 
 ---
@@ -148,15 +148,9 @@ Total Sales = (Retail Price × Quantity) + Tax
 
 ---
 
-## 📷 Dashboard Preview
 
-![Sales Dashboard](Images/SalesDashboard.jpg)
 
----
 
-## 🔗 Live Project
-
-[View Full Dashboard Project](https://leonshilisia.github.io/sales-metrics-2014-2017/)
 
 ---
 
