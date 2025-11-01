@@ -1,68 +1,160 @@
-# Retail Sales Performance Dashboard (2014–2017)
+# 🛒 Supermarket Sales Dashboard – January to February 2024
 
-## Project Overview
-This project demonstrates how BeyondStatistics helps SMEs turn raw sales data into actionable insights.  
-A mid-sized retailer was struggling with frequent stockouts, overstocking of slow-moving items, and limited visibility into branch-level performance.  
-
-We built a **Retail Sales Performance Dashboard** to highlight what’s selling, what’s wasting money, and where to focus next.
-
-[Download Excel Workbook](Excel File/Store sales report.xlsx)  
-![Page1](Images/Page 1.jpg)  
-![Page2](Images/Page 2.jpg)  
+**Prepared by:** BeyondStatistics  
+**Tool Used:** Microsoft Excel  
+**Currency:** USD  
+**Period Analyzed:** Jan 1 – Feb 4, 2024  
+**Total Revenue:** $10,855.15  
+**Total Orders:** 70  
 
 ---
 
-## Objectives
-1. Track total sales, profit, and growth trends.  
-2. Identify best-performing product sub-categories and cities.  
-3. Detect revenue and price trends to guide pricing strategy.  
-4. Understand customer preferences for shipping modes.  
+## 📊 Executive Summary
+
+This dashboard analyzes supermarket sales performance over a 5-week period. It highlights revenue trends, customer behavior, and inventory risks using Excel-based descriptive statistics, forecasting, and regression modeling.
+
+### 🔍 Key Highlights
+- **Revenue Peaks:** Thursdays and Sundays generated 45% of total revenue.
+- **Top Customers:** 5 individuals contributed over 20% of total sales.
+- **Stable Pricing:** Average retail price was $84.42 with minimal volatility.
+- **Forecast Outlook:** Sales expected to reach ~$400/day by early March.
 
 ---
 
-## Key Findings
-1. **Sales & Revenue Growth**  
-   - Sales grew **20%** and revenue increased **14%** over two years.  
+## 📈 Business Impact
 
-2. **Profit Margins by Category**  
-   - Technology products: **19% margin** (highest).  
-   - Office supplies: **16% margin**.  
-   - Furniture: **1% margin** (lowest, dragging profitability).  
+| Metric | Value |
+|--------|-------|
+| Total Revenue | $10,855.15 |
+| Total Orders | 70 |
+| Avg Order Value | $155.07 |
+| Avg Order Quantity | 2.4 items |
+| Tax Rate | 10% per item |
 
-3. **Product Performance**  
-   - High-revenue items: Phones, chairs, storage products.  
-   - High-profit items: Copiers, accessories, phones.  
-
-4. **Sales Trends**  
-   - Quantity sold increased each quarter but dipped at the start of every new quarter.  
-   - Prices showed volatility and a negative trend, eroding margins.  
+- **Stock Planning:** End-of-month surge indicates need for phased inventory restocking.
+- **Customer Retention:** Loyalty programs recommended for top spenders.
+- **Campaign Timing:** Mondays and Fridays show room for promotional boosts.
 
 ---
 
-## Business Impact
-- **Stockouts reduced by 18%** through better reorder alerts.  
-- **Dead stock cut by 12%**, freeing up working capital.  
-- **Repeat purchases increased by 9%** after identifying and promoting top SKUs.  
-- Branch managers gained **daily visibility into sales vs. targets**, improving accountability.  
+## 📅 Sales by Day of Week
+
+| Day       | Revenue (USD) |
+|-----------|----------------|
+| Thursday  | $1,737.69 |
+| Sunday    | $1,671.72 |
+| Wednesday | $1,638.74 |
+| Tuesday   | $1,594.73 |
+| Saturday  | $1,451.75 |
+| Monday    | $1,396.75 |
+| Friday    | $1,363.78 |
+
+**Insight:** Thursday, Sunday, and Wednesday are peak days. Focus campaigns on low-performing days like Monday and Friday.
 
 ---
 
-## Recommendations
-1. **Pricing Strategy**  
-   - Stabilize volatile prices to build customer trust and protect margins.  
+## 👥 Top Customers
 
-2. **Profit Margin Optimization**  
-   - Reduce costs in low-margin categories (furniture, office supplies).  
-   - Double down on high-margin categories (technology, copiers).  
+| Name             | Total Spend (USD) |
+|------------------|-------------------|
+| Jennifer Davis   | $538.91 |
+| Michael Johnson  | $505.94 |
+| David Wilson     | $472.97 |
+| Jessica Wilson   | $395.97 |
+| David Rodriguez  | $329.91 |
 
-3. **Product Strategy**  
-   - Prioritize high-revenue sub-categories (phones, chairs, storage).  
-   - Reallocate resources to maximize ROI from top-performing products.  
+These 5 customers account for over 20% of revenue. Loyalty offers and personalized campaigns are recommended.
 
 ---
 
-## Why It Matters for SMEs
-This project shows how SMEs can move beyond spreadsheets and guesswork. With a clear dashboard, business owners can:  
-- See **what’s working and what’s wasting money**.  
-- Act fast to **cut costs and grow sales**.  
-- Make confident, data-driven decisions every day.  
+## 🚚 Shipping Performance
+
+- **Most delays:** 1–3 days (acceptable but improvable)
+- **Moderate delays:** 3–4 days (recurring issue)
+- **Outlier:** One 4–6 day delay (high risk for customer dissatisfaction)
+
+---
+
+## 📊 Descriptive Statistics
+
+| Metric         | Mean   | Median | Std Dev | Min   | Max   |
+|----------------|--------|--------|---------|-------|-------|
+| Retail Price   | 84.42  | 69.99  | 57.04   | 19.99 | 199.99 |
+| Order Quantity | 2.4    | 2      | 1.33    | 1     | 5     |
+| Tax            | 14.10  | 14.99  | 3.89    | 2.999 | 29.997 |
+| Total Sale     | 155.07 | 164.95 | 42.84   | 32.99 | 329.97 |
+
+---
+
+## 📈 Forecasting Summary
+
+- **Sales Forecast:** Expected to grow to ~$400/day by March.
+- **Retail Price Forecast:** Stable near $100.
+- **Order Quantity Forecast:** Gradual increase to ~3 units/day.
+
+---
+
+## 📉 Regression Analysis
+
+**Model:**  
+Total Sales = (Retail Price × Quantity) + Tax  
+**R² = 1.0** → Perfect fit due to deterministic formula.
+
+| Predictor      | Coefficient | P-value | Interpretation |
+|----------------|-------------|---------|----------------|
+| Retail Price   | ~0          | <0.001  | Small positive impact |
+| Order Quantity | ~0          | 0.023   | Statistically significant |
+| Tax            | 11          | <0.001  | Strong, consistent impact |
+
+---
+
+## ✅ Recommendations
+
+1. **Plan for Rising Demand**  
+   - Replenish inventory in phases  
+   - Scale staffing for peak days  
+
+2. **Focus on Volume, Not Price**  
+   - Maintain pricing strategy  
+   - Use bundles and volume discounts  
+
+3. **Use Top Customers Strategically**  
+   - Loyalty programs  
+   - Early-access promotions  
+
+4. **Prepare for Forecast Uncertainty**  
+   - Monitor weekly performance  
+   - Build fallback plans  
+
+5. **Apply Regression for Scenario Planning**  
+   - Use model to simulate pricing/tax impacts  
+   - Build internal revenue calculators  
+
+---
+
+## 📷 Dashboard Preview
+
+![Sales Dashboard](Assets/sales-data-analysis.jpeg)
+
+---
+
+## 🔗 Live Project
+
+[View Full Dashboard Project](https://leonshilisia.github.io/sales-metrics-2014-2017/)
+
+---
+
+## 🧰 Tools Used
+
+- Microsoft Excel  
+- PivotTables  
+- Forecasting functions  
+- Regression modeling  
+- Visual dashboards
+
+---
+
+## 🏷 Tags
+
+`#ExcelDashboard` `#SMEAnalytics` `#RetailInsights` `#Cashflow` `#Forecasting` `#CustomerRetention`
+
